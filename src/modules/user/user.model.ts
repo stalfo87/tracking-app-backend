@@ -6,8 +6,11 @@ export class User {
   id: number;
 
   @Field({ nullable: true })
-  firstName?: string;
+  email?: string;
 
   @Field({ nullable: true })
-  lastName?: string;
+  username?: string;
+
+  @Field({ nullable: true })
+  name?: string;
 }

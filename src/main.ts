@@ -9,6 +9,7 @@ async function bootstrap() {
       whitelist: true
     })
   )
+  app.enableShutdownHooks();
   await app.listen(process.env.PORT ?? 3000);
 }
 await bootstrap();
